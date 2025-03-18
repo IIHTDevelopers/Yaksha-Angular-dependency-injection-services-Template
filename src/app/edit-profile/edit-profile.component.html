@@ -1,0 +1,10 @@
+<h2>Edit Profile</h2>
+<form (ngSubmit)="updateProfile()">
+    <label for="name">Name:</label>
+    <input id="name" [(ngModel)]="userProfile.name" name="name" required />
+
+    <label for="email">Email:</label>
+    <input id="email" [(ngModel)]="userProfile.email" name="email" required />
+
+    <button type="submit">Save</button>
+</form>
